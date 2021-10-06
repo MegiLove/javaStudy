@@ -1,0 +1,12 @@
+class Exam06 
+{
+	public static void main(String[] args) 
+	{ for(int i=10; i<=30; i++){
+		int sum1=sum1+i;
+	}
+	for(int j=0; j<=5; j++){
+		int sum2=sum2+j;
+	}
+		System.out.println(sum1*sum2);
+	}
+}
