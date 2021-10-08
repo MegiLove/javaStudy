@@ -1,0 +1,18 @@
+class Rectangle02
+{
+	int x;
+	int y;
+	
+	int areacheck(int a, int b){
+		int area;
+		area= a*b;
+	}
+}
+
+class AreaTest 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}

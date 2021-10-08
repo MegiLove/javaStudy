@@ -1,0 +1,8 @@
+class CharAndInt 
+{
+	public static void main(String[] args) 
+	{
+	   int k=65;
+	   System.out.println((char)k);
+	}
+}
