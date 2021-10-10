@@ -1,0 +1,75 @@
+class Airconditioner
+{  
+	private String model;
+	private String company;
+	private boolean onoff;
+    private boolean dry;
+    
+	public String getModel(){
+		return model;
+	}
+	public String getCompany(){
+		return company;
+	}
+	public boolean getOnoff(){
+		return onoff;
+	}
+	public boolean getDry(){
+		return dry;
+	}
+	public void setModel(String a){
+		model= a;
+	}
+	public void setCompany(String a){
+		company= a;
+	}
+	public void setOnoff(boolean a){
+		onoff= a;
+	}
+	public void setDry(boolean a){
+		dry= a;
+	}
+  
+   public void on(){
+	 System.out.println("전원이 켜졌습니다");
+	onoff=true;
+   }
+    public void off(){
+	 System.out.println("전원이 꺼졌습니다");
+	onoff=false;
+   }
+   public void dryon(){
+	 System.out.println("건조기능이 있습니다");
+	dry=true;
+   }
+
+   public void dryoff(){
+	 System.out.println("건조기능이 없습니다");
+	dry=false;
+   }
+
+
+}
+
+class AirconditionerTest
+{
+	public static void main(String[] args) 
+	{ 
+		int a;
+		CellPhone cell= new CellPhone();
+		cell.setModel("MA67");
+		cell.setCompany("샘성");
+		cell.setOnoff(true);
+		cell.setDry(true);
+		System.out.println(cell.getModel());
+		System.out.println(cell.getCompany());
+		System.out.println(cell.getOnoff());
+		System.out.println(cell.getDry());
+		cell.off();
+		cell.dryoff();
+		System.out.println(cell.getOnoff());
+		System.out.println(cell.getDry());
+		
+
+	}
+}
