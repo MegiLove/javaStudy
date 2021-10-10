@@ -35,6 +35,10 @@ class Box
 		System.out.println("부피: "+volume);
     }
 
+	public String toString()
+	{
+		return "가로는"+width+" 세로는"+length+" 높이는"+height;
+	}
 	
 }
 
