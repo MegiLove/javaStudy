@@ -4,43 +4,58 @@ class Box
 	private int length;
 	private int height;
 	private boolean empty;
+	private String things;
 
     public String toString()
-	{
+	{   String r= "비어있음";
+		if(!empty)
+		{
+			r= "비어있지 않음";	
+		}
 		String result="";
-        result+="채워져있는가? "+empty+"\n";
+        result+=r+"\n";
 		result+="가로: "+width+"\n";
 		result+="세로: "+length+"\n";
 		result+="높이: "+height+"\n";
+		result+="들어있는 것: "+things+"\n";
 		return result;
 	}
-    public void setEmpty(boolean empty)
+    
+    public void put(String things)
 	{
-		this.empty= empty;
+		this.things= things;
+		empty= false;
+		System.out.println(things+"을 넣었습니다");
 	}
 
+	public void take()
+	{
+		System.out.println(things+"을 빼냈습니다");
+		things= null;
+		empty= true;
+	}
 
 	public Box()
 	{
-		this.empty=false;
+		this.empty=true;
 	}
 	public Box(int width)
 	{
 		this.width= width;
-		this.empty= false;
+		this.empty= true;
 	}
 	public Box(int width, int length)
 	{
 		this.width= width;
 		this.length= length;
-		this.empty= false;
+		this.empty= true;
 	}
 	public Box(int width, int length,int height)
 	{
 		this.width= width;
 		this.length= length;
 		this.height= height;
-		this.empty= false;
+		this.empty= true;
 	}
 }
 
@@ -50,13 +65,8 @@ class BoxTest
 	{
 		Box b1= new Box();
 		System.out.println(b1);
-		b3.setEmpty(true);
-		Box b3= new Box(6);
-		System.out.println(b3);
-		Box b4= new Box(6,5);
-		System.out.println(b4);
-		b5.setEmpty(true);
 		Box b5= new Box(6,5,3);
+		b5.put("책");
 		System.out.println(b5);
 		
 	}
