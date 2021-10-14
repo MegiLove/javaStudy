@@ -1,0 +1,20 @@
+class Person
+{
+   String name;
+   String addr;
+   String number;
+}
+
+class Customer extends Person
+{
+	String cusnumber;
+	int mile;
+}
+
+class  CustomerTest
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}
