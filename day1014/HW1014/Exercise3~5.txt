@@ -1,8 +1,7 @@
 Exercise3
 1. expands가 아니라 extends
 2. public void MountainBike==>public MountainBike()
-3. gear=g;==> seatHeight=g;
-4. int g==> int gear,int speed,int g
+3. gear=g;==> seatHeight=g; //gear는 private
 
 Exercise4
 1. Student, GraduateStudent

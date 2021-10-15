@@ -77,12 +77,7 @@ class UnderGraduate extends Student
 	}
 	public UnderGraduate(int number,String name,String major,String grade,int credit,String club)
 	{
-		super(100,name,major,grade,100);
-		this.number=number;
-		this.name=name;
-		this.major=major;
-		this.grade=grade;
-		this.credit=credit;
+		super(number,name,major,grade,credit);
 		this.club= club;
 	}
     public void setClub(String club)
@@ -110,12 +105,7 @@ class GraduateStudent extends Student
 	}
 	public GraduateStudent(int number,String name,String major,String grade,int credit,String lab,double scholar)
 	{
-		super(100,name,major,grade,100);
-		this.number=number;
-		this.name=name;
-		this.major=major;
-		this.grade=grade;
-		this.credit=credit;
+		super(number,name,major,grade,credit);
 		this.lab=lab;
 		this.scholar=scholar;
 	}
